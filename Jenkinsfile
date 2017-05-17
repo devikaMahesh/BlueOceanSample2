@@ -11,9 +11,14 @@ pipeline {
         bat 'mvn compile'
       }
     }
-    stage('test') {
+    stage('Test') {
       steps {
         bat 'mvn clean install'
+      }
+    }
+    stage('Ready') {
+      steps {
+        echo 'Ready to deploy'
       }
     }
   }
