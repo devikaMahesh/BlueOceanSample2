@@ -30,7 +30,7 @@ public WebDriver driver;
 		
 		loginSite.loginApplication();
 		
-		System.out.println("Credentials entered");
+		System.out.println("Credentials entered")
 	
 	}
 }
