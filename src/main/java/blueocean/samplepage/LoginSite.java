@@ -25,7 +25,7 @@ public class LoginSite {
 	protected WebElement passwordField;
 
 	protected void enterPassword() {
-		passwordField.sendKeys("mercury1");
+		passwordField.sendKeys("mercury");
 	}
 	
 	@FindBy(xpath = "//input[contains(@src,'images')]")
