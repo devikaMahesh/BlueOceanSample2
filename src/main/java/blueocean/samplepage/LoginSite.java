@@ -18,14 +18,14 @@ public class LoginSite {
 	protected WebElement userNameField;
 
 	protected void enterEmail() {
-		userNameField.sendKeys("mercury");
+		userNameField.sendKeys("mercury1");
 	}
 	
 	@FindBy(xpath = "//input[contains(@name,'password')]")
 	protected WebElement passwordField;
 
 	protected void enterPassword() {
-		passwordField.sendKeys("mercury");
+		passwordField.sendKeys("mercury1");
 	}
 	
 	@FindBy(xpath = "//input[contains(@src,'images')]")
