@@ -26,6 +26,7 @@ public class LoginSite {
 
 	protected void enterPassword() {
 		passwordField.sendKeys("mercury1");
+		assert.fail
 	}
 	
 	@FindBy(xpath = "//input[contains(@src,'images')]")
@@ -39,8 +40,16 @@ public class LoginSite {
 	public void loginApplication() {
 
 		enterEmail();
-	//	enterPassword();
+		enterPassword();
 		clickSignInButton();
+		clicktripTypeButton();
 		}
+	
+	@FindBy(name = "tripType")
+	protected WebElement tripTypeButton;
+
+	protected void clicktripTypeButton() {
+		tripTypeButton.click();
+	}
 
 }
