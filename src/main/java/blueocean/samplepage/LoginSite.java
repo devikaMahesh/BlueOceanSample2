@@ -39,7 +39,7 @@ public class LoginSite {
 	public void loginApplication() {
 
 		enterEmail();
-		enterPassword();
+	//	enterPassword();
 		clickSignInButton();
 		}
 
